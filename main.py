@@ -1,5 +1,4 @@
 from string import ascii_lowercase, ascii_uppercase, printable
-from dataclasses import dataclass, fields
 from typing import Literal
 
 
@@ -38,7 +37,7 @@ class CaesarCipher:
     def encode_message(self, option: EncodeOption) -> str:
         return ''.join(self.encoder_map[option](char) for char in self.text)
     
-    def decode_message(self, encoder: callable) -> str:
+    def decode_message(self, encoder: EncodeOption) -> str:
         self.shift *= -1
         return self.encode_message(encoder)
 
