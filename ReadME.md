@@ -1,3 +1,1 @@
-Three implementations of Ceasar's cypher just to see what is what.
-
-Random substitution to try and break it.
+Three implementations of Ceasar's cypher and random substitution to try and break them, brute force and frequency analisis respectively.
